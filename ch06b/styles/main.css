@@ -60,10 +60,13 @@ header {
 /* the styles for the main element */
 main {
 	clear: left;
+	display: flex;
 }
 
 /* the styles for the section */
 section {
+	flex: 3;
+	order:2;
 	& h1 {
 		padding-top: .5em;
 	}
@@ -102,6 +105,16 @@ aside {
 	& img {
 		margin-bottom: .9em;
 	}
+}
+
+#speakers{
+	flex:1;
+	order: 1;
+}
+
+#event_change{
+	flex: 1;
+	order: 3;
 }
 
 /* the styles for the footer */
